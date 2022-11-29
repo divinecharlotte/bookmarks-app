@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7775d9e45e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Bookmarks App</title>
+  </head>
+
+  <body onload="displayBookmarks()">
+    <section>
+      <div class="input-bookmark">
+        <form action="">
+          <input type="text" placeholder="Title" name="title" required />
+          <input type="text" placeholder="link" name="link" required />
+          <input
+            type="text"
+            placeholder="description"
+            name="description"
+            required
+          />
+          <label for="categories">Choose a category:</label>
+          <select name="category" id="category">
+            <option value="songs">songs</option>
+            <option value="articles">articles</option>
+            <option value="quizes">quizes</option>
+          </select>
+          <br />
+          <br />
+          <input type="submit" value="Add Bookmark" id="submit" required />
+        </form>
+      </div>
+      <div class="display-bookmarks">
+        <h3><span id="counter"></span> Bookmarks</h3>
+        <div class="bookmarks-wrapper">
+            <div class="songs-wrapper">
+                <h3><span id="counter"></span> songs Bookmarks</h3>
+            </div>
+        </div>
+  
+      </div>
+      <div class="bookmark-details">
+        <h4>Selected bookmark details</h4>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
